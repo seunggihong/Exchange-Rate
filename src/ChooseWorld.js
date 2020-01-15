@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-class ChooseWorld extends React.Component {
+class ChooseWorld extends Component {
     render() {
         return (
-            <select className="choose__world" id="select__box">
+            <select className="choose__world" id={this.props.id}>
                 <option className="world__value" value={this.props.fristValue}>
                     {this.props.fristCountry}
                 </option>
